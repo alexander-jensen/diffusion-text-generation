@@ -14,6 +14,12 @@ For our data, we used a Shakespeare dataset based off of all of Shakespeare's pl
 
 # Basic Methodology
 
+Our project is based off of two research papers that tackle text diffusion: DiffuSeq and Diffusion-LM, which both involve diffusion processes to derive text that would be plausible responses to certain prompts. While Diffusion-LM uses a classifier to help guide the output (eg. a certain topic, place, time, etc), DiffuSeq offers a more friendly input and output format: the input is a sequence of words, which allows for the model to have a "context" that guides what words can possibly follow the input. In addition, we also wish to train a model from the ground up to learn the best way to represent words as vectors. Diffusion-LM proposes a method for learning these representations.
+
+The Diffusion-LM paper learns embeddings in a similar manner, with the loss function being similar to DiffuSeq's.
+
 # Experiments
+
+We performed experiments with our model of different sequence lengths and different Shakespeare subsets, mainly plays and sonnets.
 
 # Results
